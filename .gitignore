@@ -1,0 +1,4 @@
+**/obj
+**/Makefile
+build/*
+**/*.gch/c++
