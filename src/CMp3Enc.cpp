@@ -92,7 +92,7 @@ bool CMp3Enc::Init(tInfo const & info, bool local, bool remote)
     if (lame_init_params(Lame) == -1)
         throw EEncoder("error on parameter initializing.");
 
-    FrameSize = lame_get_framesize(Lame);
+    FrameSize = 512;
     if (FrameSize == 0)
         throw EEncoder("framesize == 0");
 
